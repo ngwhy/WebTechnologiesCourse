@@ -1,10 +1,15 @@
-server {
 
-  listen 80 default;
+server { 
+	error_log /home/box/test.error.log;
+	listen 80;
+	#listen 127.0.0.1:8080 127.0.0.1:80;
 
-  location /hello {
-    proxy_pass http://localhost:8080;
-  }
-  
+
+	location ^~ /hello  {
+	    proxy_pass http://0.0.0.0:8080;
+    }
+	location /  {
+	    proxy_pass  http://0.0.0.0:8080;
+    }
 }                                                                             
    

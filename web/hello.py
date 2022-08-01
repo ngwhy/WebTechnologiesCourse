@@ -1,6 +1,6 @@
 def wsgi_app(environ, start_response):
     
-    start_response('200 OK', [('Content-type', 'text/html')])
+    start_response('200 OK', [('Content-type', 'text/plain')])
     
     line = "\n".join(environ.get('QUERY_STRING').split("&"))
 

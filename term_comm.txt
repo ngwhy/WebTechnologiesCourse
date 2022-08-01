@@ -6,7 +6,7 @@ git clone https://github.com/username/projectname.git
 , теперь у нас создастся папка projectname в директории /home/box
 
 
-mv WebTechnologiesCourse/web/
+mv WebTechnologiesCourse/web/ .
 
 
 7. Переименуйте созданную папку в web: mv projectname web
